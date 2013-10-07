@@ -4,45 +4,40 @@
     <meta charset="utf-8">
     <title>sobear-沉淀生活</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/jquery/2.0.3/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
     <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>sobear</h1>
-      <p>把生活沉淀下来。</p>
+      <p>把生活沉淀下来</p>
     </header>
 
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
+    <div class="content">
+      <section class="content-main">
         <h2></h2>
         <p>作者：小果</p>
         <p>文章列表：<a href="https://github.com/tomayday/MyBlog/issues?state=open">issue</a></p>
       </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/tomayday">tomayday</a></p>
-        <p>
-          <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small>
-        </p>
-      </footer>
     </div>
 
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-        var pageTracker = _gat._getTracker("UA-44627934-1");
-        pageTracker._trackPageview();
-      } catch(err) {}
+    <footer class="footer">
+      <p>Project maintained by <a href="https://github.com/tomayday">tomayday</a></p>
+      <p><small>Hosted on GitHub Pages.</small></p>
+    </footer>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44627934-1', 'sobear.me');
+      ga('send', 'pageview');
+
     </script>
   </body>
 </html>
