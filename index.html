@@ -2,28 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>sobear-沉淀生活</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name ="viewport" content ="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+
+    <title>小果的个人主页</title>
     <link rel="stylesheet" href="index.css">
     <!--[if lt IE 9]>
       <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
   </head>
   <body>
-    <header class="header">
-      <h1>sobear</h1>
-      <p>把生活沉淀下来</p>
-    </header>
 
     <div class="content">
-      <section class="content-main">
-        <h2></h2>
-        <p>作者：小果</p>
-        <p>文章列表：<a href="https://github.com/tomayday/MyBlog/issues?state=open">issue</a></p>
-      </section>
-    </div>
 
-    <div class="friends">
-      <a href="http://spdf.me" target="_blank">一树小草</a>
+      <!-- 个人信息 -->
+      <div class="info">
+        
+        <!-- 明信片 -->
+        <section class="postcard">
+          <a href="#" class="avatar-url">
+            <img class="avatar" src="http://blog-images.u.qiniudn.com/avatar.png">
+          </a>
+          <section class="words">
+            <h3>小 果</h3>
+            <p class="slogan">或许是一个理想主义者。</p>
+          </section>
+          <ul class="contact cf">
+            <li class="contact-item twitter">
+              <a href="https://twitter.com/_sobear" target="_blank">twitter</a>
+            </li>
+            <li class="contact-item weibo">
+              <a href="http://weibo.com/waytotomorrow/" target="_blank">微博</a>
+            </li>
+            <li class="contact-item zhihu">
+              <a href="http://www.zhihu.com/people/liu-xiong-47" target="_blank">知乎</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 友情链接 -->
+        <section class="friends">
+          <h3>友情链接</h3>
+          <ul class="firends-list">
+            <li class="friends-item">
+              <a href="http://spdf.me" target="_blank">一树小草</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- 文章列表 -->
+      <div class="articles">
+        <h3>文章列表</h3>
+      </div>
     </div>
 
     <footer class="footer">
@@ -34,13 +65,13 @@
 
     <script src="index.js"></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      ga('create', 'UA-44627934-1', 'sobear.me');
-      ga('send', 'pageview');
+      // ga('create', 'UA-44627934-1', 'sobear.me');
+      // ga('send', 'pageview');
     </script>
   </body>
 </html>
