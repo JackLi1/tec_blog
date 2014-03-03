@@ -414,10 +414,16 @@ body {
   padding: 0;
   margin: 0;
   min-width: 300px;
+  position: relative;
 }
 
 a {
+  color: #00B9D8;
+  transition: 0.3s color;
   text-decoration: none;
+}
+a:hover {
+  color: #FA5351;
 }
 
 h1, h2, h3, p {
@@ -440,6 +446,13 @@ ul, li {
 .cf {
     zoom:1;
 }
+
+.second-title {
+  color: #33495F;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
 .content {
   padding: 4%;
 }
@@ -454,14 +467,17 @@ ul, li {
   margin-right: 5%;
   font-family: '华文细黑', 'Microsoft Yahei';
 }
+
 /* 明信片 */
 .postcard {
   width: 100%;
   background-color: #fff;
   padding-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 60px;
 }
-
+.avatar-url {
+  height: 100px;
+}
 .postcard .avatar {
   width: 30%;
   margin: 0 20px 0 5%;
@@ -474,9 +490,7 @@ ul, li {
   margin-top: 6%;
 }
 .words h3 {
-  color: #33495F;
-  font: 1.5em 'Microsoft Yahei', '华文细黑';
-  font-weight: 700;
+  font-size: 1.5em;
 }
 .words .slogan {
   margin-top: 5px;
@@ -501,9 +515,44 @@ ul, li {
   color: #fff;
   line-height: 60px;
   font-size: 1.3em;
+  display: block;
+}
+
+/* 友情链接 */
+.friends {
+  width: 90%;
+  background-color: #fff;
+  padding: 5%;
+  margin-bottom: 60px;
+}
+.friends-list {
+  margin: 20px 0 0 20px;
+}
+.friends-item {
+  list-style-type: circle;
+}
+.friends-item a {
+  font-size: 1.1em;
+  color: #00B9D8;
+  transition: 0.3s color;
+}
+.friends-item a:hover {
+  color: #FA5351;
 }
 
 .articles {
   width: 64%;
-  background-color: #aaa;
+  background-color: #DBE1E8;
+  min-height: 800px;
+  margin-bottom: 60px;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 20px 0;
 }

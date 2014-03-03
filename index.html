@@ -10,6 +10,7 @@
     <!--[if lt IE 9]>
       <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="http://cdn.staticfile.org/jquery/2.1.0/jquery.min.js"></script>
   </head>
   <body>
 
@@ -24,7 +25,7 @@
             <img class="avatar" src="http://blog-images.u.qiniudn.com/avatar.png">
           </a>
           <section class="words">
-            <h3>小 果</h3>
+            <h3 class="second-title">小 果</h3>
             <p class="slogan">或许是一个理想主义者。</p>
           </section>
           <ul class="contact cf">
@@ -42,10 +43,13 @@
 
         <!-- 友情链接 -->
         <section class="friends">
-          <h3>友情链接</h3>
-          <ul class="firends-list">
+          <h3 class="second-title">友情链接</h3>
+          <ul class="friends-list">
             <li class="friends-item">
-              <a href="http://spdf.me" target="_blank">一树小草</a>
+              <a href="http://spdf.me" target="_blank">一树小草：Move me</a>
+            </li>
+            <li class="friends-item">
+              <a href="http://darkkate.com/" target="_blank">荒芜之地：拓荒之旅</a>
             </li>
           </ul>
         </section>
@@ -53,7 +57,9 @@
 
       <!-- 文章列表 -->
       <div class="articles">
-        <h3>文章列表</h3>
+        <ul class="article-list">
+          
+        </ul>
       </div>
     </div>
 
@@ -62,6 +68,15 @@
       <p><small>Hosted on GitHub Pages.</small></p>
     </footer>
 
+    <script type="text/tpl" id="article-tpl">
+      <li class="article-item">
+        <a class="title" href={url} target="_blank">{title}</a>
+        <div class="others">
+          <span class="time">{time}</span>
+          <span class="tags">{tags}</span>
+        </div>
+      </li>
+    </script>
 
     <script src="index.js"></script>
     <script>
