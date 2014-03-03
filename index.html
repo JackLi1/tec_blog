@@ -17,7 +17,7 @@
     <div class="content">
 
       <!-- 个人信息 -->
-      <div class="info">
+      <div class="info cf">
         
         <!-- 明信片 -->
         <section class="postcard">
@@ -37,6 +37,9 @@
             </li>
             <li class="contact-item zhihu">
               <a href="http://www.zhihu.com/people/liu-xiong-47" target="_blank">知乎</a>
+            </li>
+            <li class="contact-item github">
+              <a href="https://github.com/imsobear" target="_blank">github</a>
             </li>
           </ul>
         </section>
@@ -71,10 +74,8 @@
     <script type="text/tpl" id="article-tpl">
       <li class="article-item">
         <a class="title" href={url} target="_blank">{title}</a>
-        <div class="others">
-          <span class="time">{time}</span>
-          <span class="tags">{tags}</span>
-        </div>
+        <span class="time">{time}</span>
+        <span class="tags">{tags}</span>
       </li>
     </script>
 

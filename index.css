@@ -413,7 +413,6 @@ body {
   background-color: #EAEDF1;
   padding: 0;
   margin: 0;
-  min-width: 300px;
   position: relative;
 }
 
@@ -455,6 +454,8 @@ ul, li {
 
 .content {
   padding: 4%;
+  margin: 0 auto;
+  text-align: center;
 }
 .info, .articles {
   display: inline-block;
@@ -462,32 +463,33 @@ ul, li {
 }
 
 .info {
-  width: 30%;
-  min-width: 300px;
+  width: 35%;
   margin-right: 5%;
   font-family: '华文细黑', 'Microsoft Yahei';
+  text-align: left;
 }
 
 /* 明信片 */
 .postcard {
   width: 100%;
   background-color: #fff;
-  padding-top: 5%;
-  margin-bottom: 60px;
+  padding-top: 20px;
+  margin-bottom: 40px;
 }
 .avatar-url {
-  height: 100px;
+  width: 30%;
+  margin: 0 5% 0 5%;
+  display: inline-block;
 }
 .postcard .avatar {
-  width: 30%;
-  margin: 0 20px 0 5%;
+  width: 100%;
   border-radius: 50%;
-  margin-bottom: 5%;
 }
 .postcard .words {
+  width: 58%;
   display: inline-block;
   vertical-align: top;
-  margin-top: 6%;
+  margin-top: 20px;
 }
 .words h3 {
   font-size: 1.5em;
@@ -496,9 +498,12 @@ ul, li {
   margin-top: 5px;
   color: #9099A3;
 }
+.contact {
+  margin-top: 20px;
+}
 .contact-item {
   float: left;
-  width: 33.3%;
+  width: 25%;
   height: 60px;
   text-align: center;
 }
@@ -510,6 +515,9 @@ ul, li {
 }
 .zhihu {
   background-color: #10CDC1;
+}
+.github {
+  background-color: #33495F;
 }
 .contact-item a {
   color: #fff;
@@ -523,7 +531,7 @@ ul, li {
   width: 90%;
   background-color: #fff;
   padding: 5%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 .friends-list {
   margin: 20px 0 0 20px;
@@ -541,18 +549,82 @@ ul, li {
 }
 
 .articles {
-  width: 64%;
-  background-color: #DBE1E8;
+  width: 56%;
   min-height: 800px;
+  padding: 10px 1.5% 0 1.5%;
   margin-bottom: 60px;
+  background-color: #fff;
+  text-align: left;
 }
+.article-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-bottom: 1px solid #9AA4B0;
+}
+.article-item:last-child {
+  border: none;
+}
+.article-item .time {
+  margin: 0 1%;
+}
+.article-item span {
+  font-family: 'Microsoft YaHei';
+  font-size: 0.9em;
+  color: #999;
+  vertical-align: bottom;
+}
+
 
 .footer {
   background-color: #111;
   color: #fff;
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   text-align: center;
   padding: 20px 0;
+}
+
+/*ipad*/
+@media screen and (max-width:800px){
+  .info {
+    width: 100%;
+  }
+  .postcard, .friends {
+    float: left;
+  }
+  .postcard {
+    width: 57%;
+    margin-right: 3%;
+  }
+  .friends {
+    width: 36%;
+    padding: 20px 2%;
+  }
+  .articles {
+    width: 97%;
+  }
+  .footer {
+    bottom: -20px;
+  }
+}
+
+/* mobie */
+@media screen and (max-width:600px){
+  .info {
+    width: 100%;
+  }
+  .postcard {
+    width: 100%;
+  }
+  .friends {
+    width: 94%;
+    padding: 20px 3%;
+  }
+  .articles {
+    width: 97%;
+  }
+  .footer {
+    bottom: -30px;
+  }
 }

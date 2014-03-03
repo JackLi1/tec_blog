@@ -21,6 +21,11 @@ $(function() {
         });
     }
 
+    // 修正获取的时间
+    function modifyTime(str) {
+        return str.slice(0, str.indexOf('T'));
+    }
+
     $.getJSON(issueUrl, function(data) {
 
         var list = '';
@@ -31,18 +36,18 @@ $(function() {
 
             issue.url = data[i].html_url;
             issue.title = data[i].title;
-            issue.time = data[i].created_at;
+            issue.time = modifyTime(data[i].created_at);
+            issue.tags = '';
 
             // get tags
             for (var j = 0, labelLength = data[i].labels.length; j < labelLength; j++) {
                 var comma = j === (labelLength - 1)? '': '，';
-                issue.tags += data[i].labels[j] + comma;
+                issue.tags += data[i].labels[j].name + comma;
             }
 
+            console.log(issue.tags);
             list += substitute(tpl, issue);
         }
-
-        console.log(list);
 
         $('.article-list').html(list);
     });
