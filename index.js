@@ -44,8 +44,7 @@ $(function() {
                 var comma = j === (labelLength - 1)? '': '，';
                 issue.tags += data[i].labels[j].name + comma;
             }
-
-            console.log(issue.tags);
+            
             list += substitute(tpl, issue);
         }
 
