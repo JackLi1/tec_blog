@@ -49,6 +49,9 @@ $(function() {
         }
 
         $('.article-list').html(list);
+
+        $('.loading').hide();
+        $('.article-list').slideDown();
     });
 
 });
